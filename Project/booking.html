@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Vehicle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="main">
+    <nav>
+        <div class="logo">
+            <h3><a href="index.html">Vehicle Rental System</a></h3>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore Vehicles</a>
+            <a class="btn" href="booking.html">Book Now</a>
+        </div>
+    </nav>
+
+    <div class="booking-section">
+        <h1>Vehicle Booking Form</h1>
+
+        <form class="booking-form" action="booking.php" method="POST">
+
+            <label>Full Name</label>
+            <input type="text" name="name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Phone Number</label>
+            <input type="text" name="phone" required>
+
+            <label>Select Vehicle Type</label>
+            <select name="vehicle_type" required>
+                <option value="">-- Select Vehicle --</option>
+                <option>Car</option>
+                <option>Bike</option>
+                <option>CNG</option>
+                <option>Truck</option>
+            </select>
+
+            <label>Vehicle Name</label>
+            <input type="text" name="vehicle_name" placeholder="e.g. Toyota Axio" required>
+
+            <label>Pick-up Date</label>
+            <input type="date" name="pickup_date" required>
+
+            <label>Drop-off Date</label>
+            <input type="date" name="dropoff_date" required>
+
+            <label>Pick-up Location</label>
+            <input type="text" name="location" required>
+
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

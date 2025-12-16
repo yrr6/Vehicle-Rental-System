@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="main">
+    <nav>
+        <div class="logo">
+            <h3><a href="index.html">Vehicle Rental System</a></h3>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a class="btn" href="#">Register</a>
+        </div>
+    </nav>
+
+    <div class="register-section">
+        <h1>Create New Account</h1>
+
+        <form class="register-form" action="register.php" method="POST">
+            <label>Full Name</label>
+            <input type="text" name="name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Phone Number</label>
+            <input type="text" name="phone" required>
+
+            <label>Password</label>
+            <input type="password" name="password" required>
+
+            <label>Confirm Password</label>
+            <input type="password" name="confirm_password" required>
+
+            <button type="submit">Create Account</button>
+        </form>
+
+        <p class="register-text">
+            Already have an account? <a href="index.html">Login</a>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
